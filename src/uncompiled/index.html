@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arial:400,800">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/ekko-lightbox.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/dist/all.css">
   </head>
   <body>
   <!-- nav bar start -->
@@ -48,37 +46,41 @@
 <!-- main Content Section -->
 <div class="container">
   <div class="row newrow">
-  <div class="col-lg-9">
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner" role="listbox" id="silderContent">
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-  </div>
-  <div class="col-lg-3 sidebar">
-    <img id="brokerPhoto" src="assets/newoffice.png"  class="img-fluid" alt="">
-    <p style="padding-top: 10vh;">Agency <span>Newoffice</span></p>
-    <p>Agency <span id="brokername">Sofia Lothsson</span></p>
-    <a href="#" >View all our Listing</a>
-    <div id="sidebarbtn">
-      <a href="#" id="mailto" class="btn btn-primary btn-lg btn-block">
-        <span class="col-lg-8" style="float:left;">Send Email</span>
-        <span class="col-lg-4 btnicon"><i class="fa fa-envelope" aria-hidden="true"></i>
-</span></a>
-      <a href="#" id="callto" class="btn btn-primary btn-lg btn-block">
-        <span class="col-lg-8" style="float:left;">Call Now</span>
-        <span class="col-lg-4 btnicon2"><i class="fa fa-phone" aria-hidden="true"></i>
-</span></a>
+    <!-- Home Slider -->
+    <div class="col-lg-9">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox" id="silderContent">
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
+    <!-- Home Slider End -->
+    <!-- Sidebar -->
+    <div class="col-lg-3 sidebar">
+      <img id="brokerPhoto" src="assets/newoffice.png"  class="img-fluid" alt="">
+      <p style="padding-top: 10vh;">Agency <span>Newoffice</span></p>
+      <p>Agency <span id="brokername">Sofia Lothsson</span></p>
+      <a href="#" >View all our Listing</a>
+      <div id="sidebarbtn">
+        <a href="#" id="mailto" class="btn btn-primary btn-lg btn-block">
+          <span class="col-lg-8" style="float:left;">Send Email</span>
+          <span class="col-lg-4 btnicon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+        </a>
+        <a href="#" id="callto" class="btn btn-primary btn-lg btn-block">
+          <span class="col-lg-8" style="float:left;">Call Now</span>
+          <span class="col-lg-4 btnicon2"><i class="fa fa-phone" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <!-- Sidebar End -->
   </div>
-  </div>
+  <!-- Spec Content Section -->
   <section class="row newrow">
     <div class="col-lg-8">
         <div class="itemheading">
@@ -119,7 +121,9 @@
       </button>
     </div>
   </section>
-  <section id="morePhotos" class="">
+  <!-- Spec Content Section End-->
+  <!-- morePhotos Content Section -->
+  <section id="morePhotos">
   <div class="row">
     <div class="col-lg-12">
       <h3><b>More Photos</b></h3>
@@ -132,6 +136,8 @@
   </div>
   </div>
   </section>
+  <!-- morePhotos Content Section End-->
+  <!-- Neighborhood Content Section -->
   <section id="neighborhood">
     <div class="row">
       <div class="col-lg-12">
@@ -145,6 +151,8 @@
       </div>
     </div>
   </section>
+  <!-- Neighborhood Content Section End -->
+  <!-- Similar Content Section End -->
   <section id="Similarslider">
     <div class="row">
           <div class="col-xs-6 text-md-right lead float-right" style="margin-right: 46vw;margin-left: 3vw;">
@@ -169,11 +177,9 @@
             </div>
         </section>
       </div>
-
-
-
     </div>
   </section>
+  <!-- Similar Content Section End -->
   <section id="moreProperty">
     <div class="row">
       <div class="col-lg-12">
@@ -268,10 +274,6 @@
 </footer>
 
 <!-- End Footer Section -->
-<script src="/js/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/ekko-lightbox.min.js"></script>
-    <script src="/js/custom.js"></script>
+<script src="/dist/all.js"></script>
   </body>
 </html>

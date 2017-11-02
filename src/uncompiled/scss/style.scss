@@ -58,7 +58,7 @@ body {
 
 }
 .btnicon {
-  background-color: #123A77;
+background-color: $btn-primarycH;
 margin-left: 41px;
 padding: 10px;
 padding-left: 15px;
@@ -131,10 +131,10 @@ border-left: 1px solid grey;
   }
 }
 .btn-primary {
-  background-color: #2E5E9E;
-  border-color: #2E5E9E;
+  background-color: $btn-primaryc;
+  border-color: $btn-primaryc;
   &:hover {
-    background-color: #123A77;
+    background-color: $btn-primarycH;
   }
 }
 footer {
@@ -145,7 +145,7 @@ footer {
     color: white;
   }
   a{
-    color: #899297;
+    color: $footer-color;
     font-size: 0.9em;
     text-decoration: none;
   }
@@ -154,7 +154,7 @@ footer {
   padding: 2em;
 }
 .footercontent {
-  border-top: 2px solid #899297;
+  border-top: 2px solid $footer-color;
 }
 }
 .morecontent span {
@@ -195,6 +195,37 @@ footer {
 
  .active > div { display:none; }
  .active > div:first-child { display:block; }
+
+ /* equal card height */
+ .row-equal > div[class*='col-'] {
+     display: flex;
+     flex: 1 0 auto;
+ }
+
+ .row-equal .card {
+    width: 100%;
+ }
+
+ /* ensure equal card height inside carousel */
+ .carousel-inner>.row-equal.active,
+ .carousel-inner>.row-equal.next,
+ .carousel-inner>.row-equal.prev {
+     display: flex;
+ }
+
+ /* prevent flicker during transition */
+ .carousel-inner>.row-equal.active.left,
+ .carousel-inner>.row-equal.active.right {
+     opacity: 0.5;
+     display: flex;
+ }
+
+
+ /* control image height */
+ .card-img-top-250 {
+     max-height: 250px;
+     overflow:hidden;
+ }
 
 /*xs*/
 @media (max-width: 767px) {
@@ -237,36 +268,4 @@ footer {
 	.active > div:first-child + div { display:block; }
   .active > div:first-child + div + div { display:block; }
 	.active > div:first-child + div + div + div { display:block; }
-}
-
-
-/* equal card height */
-.row-equal > div[class*='col-'] {
-    display: flex;
-    flex: 1 0 auto;
-}
-
-.row-equal .card {
-   width: 100%;
-}
-
-/* ensure equal card height inside carousel */
-.carousel-inner>.row-equal.active,
-.carousel-inner>.row-equal.next,
-.carousel-inner>.row-equal.prev {
-    display: flex;
-}
-
-/* prevent flicker during transition */
-.carousel-inner>.row-equal.active.left,
-.carousel-inner>.row-equal.active.right {
-    opacity: 0.5;
-    display: flex;
-}
-
-
-/* control image height */
-.card-img-top-250 {
-    max-height: 250px;
-    overflow:hidden;
 }

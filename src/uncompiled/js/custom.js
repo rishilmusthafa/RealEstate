@@ -1,7 +1,7 @@
 $(function() {
 
 function nextproperty(Nid) {
-  $.getJSON("/js/properties.json", function(result){
+  $.getJSON("/data/properties.json", function(result){
     var alldata = result;
     $("#ptitle").html(result[Nid].title);
     $("#psubtitle").html(result[Nid].title+','+ result[Nid].location);

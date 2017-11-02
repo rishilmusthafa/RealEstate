@@ -35,9 +35,9 @@ function nextproperty(Nid) {
     $("#lightboxSmall").html("");
       $.each(result[Nid].photos, function(i, field){
         if(i == 0) {
-          $("#silderContent").append('<div class="carousel-item active"><a href="'+field.url+'" data-toggle="lightbox"><img class="img-fluid" src="'+field.url+'" alt="" style="max-height:35.57291666666667vw"></a></div>');
+          $("#silderContent").append('<div class="carousel-item active"><a href="'+field.url+'" data-toggle="lightbox"><img class="img-fluid" src="'+field.url+'" alt="" style="max-height:35.57291666666667vw;min-height: 215px;width: 88vw;"></a></div>');
         }else{
-          $("#silderContent").append('<div class="carousel-item"><a href="'+field.url+'" data-toggle="lightbox"><img class="img-fluid" src="'+field.url+'" alt="" style="max-height:35.57291666666667vw"></a></div>');
+          $("#silderContent").append('<div class="carousel-item"><a href="'+field.url+'" data-toggle="lightbox"><img class="img-fluid" src="'+field.url+'" alt="" style="max-height:35.57291666666667vw;min-height: 215px;width: 88vw;"></a></div>');
         }
         addcontentlight (i, field.url);
       });
